@@ -18,7 +18,7 @@ class App < Sinatra::Base
     "#{@phrase * @number.to_i}"
   end
   
-  get '/say/word1/:word2/:word3/:word4/:word5' do
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
     @one = @params[:word1]
     @two = @params[:word2]
     @three = @params[:word3]
